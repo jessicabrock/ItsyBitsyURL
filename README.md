@@ -6,7 +6,7 @@ This is a dev project, shorten url will expire within 24-hours.
 
 ## Tech Stack
 1. Python 3.7/Flask
-1. SQLlite3 database
+1. SQLite3 database
 
 ### Want to use this project?
 
