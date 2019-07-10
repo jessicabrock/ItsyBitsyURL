@@ -1,7 +1,8 @@
-# Url Shortener
+# Itsy Bitsy URL
 
 Similar to bit.ly and tinyurl - takes a long url as input and shortens it.
-This is a dev project, shorten url will expire within 24-hours.
+This is a dev project only using 3 unique characters to create shortened URL. 
+Hence the name Itsy Bitsy :-)
 
 
 ## Tech Stack
@@ -15,13 +16,20 @@ This is a dev project, shorten url will expire within 24-hours.
 1. Fork/Clone repo
 1. Activate a virtualenv or pipenv
 1. Install requirements from Pipfile
+    pipenv shell
+    pipenv install flask flask-sqlalchemy python-dotenv pytest --dev
 
+    It you don't have pipenv installed use one of the following commands:
+        python3 -m pip install pipenv
+        OR
+        pip install pipenv
 
 No warranties or expressed or implied.
 
 ## Future Additions
 
 1. Create user accounts 
+2. 
 
 ## Contract Info
 
