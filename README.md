@@ -16,7 +16,7 @@ Hence the name Itsy Bitsy :-)
 1. Fork/Clone repo
 1. Activate a virtualenv or pipenv
 1. Install requirements from Pipfile
-    pipenv shell
+    pipenv shell<br>
     pipenv install flask flask-sqlalchemy python-dotenv pytest
 
     It you don't have pipenv installed use one of the following commands:<br/>
