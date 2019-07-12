@@ -17,7 +17,7 @@ Hence the name Itsy Bitsy :-)
 1. Activate a virtualenv or pipenv
 1. Install requirements from Pipfile
     pipenv shell<br>
-    pipenv install flask flask-sqlalchemy python-dotenv pytest
+    pipenv install flask flask-sqlalchemy python-dotenv 
 
     It you don't have pipenv installed use one of the following commands:<br/>
         python3 -m pip install pipenv<br/>
