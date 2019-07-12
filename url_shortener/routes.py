@@ -14,13 +14,13 @@ def redirect_to_url(short_url):
     link.visits = link.visits + 1
     db.session.commit()
 
-    return redirect(link.original_url) 
+    return redirect(link.original_url)
 
 
 @short.route('/')
 @requires_auth
 def index():
-    return render_template('index.html') 
+    return render_template('index.html')
 
 
 @short.route('/add_link', methods=['POST'])
@@ -31,11 +31,8 @@ def add_link():
     db.session.add(link)
     db.session.commit()
 
-    return render_template(
-        'link_added.html',
-        new_link=link.short_url,
-        original_url=link.original_url
-    )
+    return render_template('link_added.html',
+            new_link=link.short_url, original_url=link.original_url)
 
 
 @short.route('/stats')

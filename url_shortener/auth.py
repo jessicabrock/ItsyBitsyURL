@@ -4,7 +4,7 @@ from flask import request, Response, current_app
 
 def check_auth(username, password):
     """This function is called to check if a username /
-        password combination is valid.
+    password combination is valid.
     """
     return username == current_app.config['ADMIN_USERNAME'] \
         and password == current_app.config['ADMIN_PASSWORD']
@@ -20,9 +20,9 @@ def authenticate():
 
 def requires_auth(f):
     @wraps(f)
-    def decorated(*args, **keyval):
+    def decorated(*args, **kwargs):
         auth = request.authorization
         if not auth or not check_auth(auth.username, auth.password):
             return authenticate()
-        return f(*args, **keyval)
+        return f(*args, **kwargs)
     return decorated
